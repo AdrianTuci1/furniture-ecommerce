@@ -131,8 +131,8 @@ h6, i[class^=flaticon-], .body__overlay {
   --clr-common-body-text: #555555;
   --clr-common-selection: #262626;
   --clr-common-body: #fff;
-  --clr-theme-primary: #b18b5e;
-  --clr-theme-secondary: #b18b5e;
+  --clr-theme-primary: #1c1c1d;
+  --clr-theme-secondary: #1f1f20;
   --clr-theme-grocery: #b18b5e;
   --clr-text-primary: #fff;
   --clr-text-secondary: #161616;
@@ -145,8 +145,8 @@ h6, i[class^=flaticon-], .body__overlay {
   --clr-bg-3: #f5f1e6;
   --clr-bg-4: #f5f1e6;
   --clr-bg-5: #f5f1e6;
-  --clr-border-1: #2f2f2f;
-  --clr-border-2: rgba(85, 85, 85, 0.2);
+  --clr-border-1: #686767;
+  --clr-border-2: rgb(85, 85, 85);
   --clr-gradient-1: linear-gradient(96.81deg, #ff589b 0%, #ffc107 100%);
   /**
   @font weight declaration
@@ -735,6 +735,7 @@ i[class^=flaticon-] {
 }
 .fill-btn:hover {
   color: var(--clr-common-white);
+  background-color: var(--clr-theme-secondary);
 }
 .fill-btn:hover .fill-btn-normal {
   opacity: 0;
@@ -991,7 +992,7 @@ i[class^=flaticon-] {
   text-transform: uppercase;
 }
 .solid-btn:hover {
-  background: var(--clr-theme-primary);
+  background: var(--clr-theme-secondary);
   color: var(--clr-common-white);
 }
 .solid-btn:hover span {
@@ -1317,7 +1318,7 @@ i[class^=flaticon-] {
   align-items: center;
   justify-content: center;
   border: 1px solid var(--clr-border-1);
-  color: var(--clr-theme-primary);
+  color: var(--clr-common-body);
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
   -o-border-radius: 50%;
@@ -2381,7 +2382,7 @@ Animate wobble-vertical
   height: 80px;
   margin-top: -45px;
   border-radius: 0px;
-  background-color: var(--clr-theme-primary);
+  background-color: #c7c7cd;
   animation: bd-loader-aim 0.8s infinite;
   animation-direction: alternate-reverse;
 }
@@ -13490,5 +13491,87 @@ p.checkout-coupon input[type=text]:focus {
 @media (max-width:450px) {
   .footer-widget-5-4 {
     width: 100%;
+  }
+}
+
+/* Banner background overlay for better text visibility */
+.furniture-banner-area {
+  position: relative;
+}
+
+.furniture-banner-area::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+
+.furniture-banner-area .container {
+  position: relative;
+  z-index: 2;
+}
+
+.furniture-banner-area .banner-content-4 {
+  position: relative;
+  z-index: 2;
+}
+
+/* Ensure text is readable with white text */
+.furniture-banner-area .banner-content-4 span,
+.furniture-banner-area .banner-content-4 h2,
+.furniture-banner-area .banner-content-4 p {
+  /* No text shadow for clean appearance */
+}
+
+.furniture-banner-area .banner-content-4 h2 {
+  color: #ffffff;
+  font-weight: 700;
+}
+
+.furniture-banner-area .banner-content-4 p {
+  color: #f0f0f0;
+  font-weight: 400;
+}
+
+.furniture-banner-area .banner-content-4 span {
+  color: #e0e0e0;
+  font-weight: 600;
+}
+
+/* Banner button hover - white background */
+.furniture-banner-area .solid-btn:hover {
+  background: #ffffff !important;
+  color: #333333 !important;
+}
+
+.furniture-banner-area .solid-btn:hover span {
+  color: #333333 !important;
+}
+
+/* Increase banner height on mobile devices */
+@media (max-width: 767px) {
+  .furniture-banner-area {
+    min-height: 500px;
+    padding: 80px 0;
+  }
+  
+  .furniture-banner-area .banner-item-4 {
+    min-height: 500px;
+    align-items: center !important;
+  }
+}
+
+@media (max-width: 575px) {
+  .furniture-banner-area {
+    min-height: 600px;
+    padding: 100px 0;
+  }
+  
+  .furniture-banner-area .banner-item-4 {
+    min-height: 600px;
   }
 }/*# sourceMappingURL=main.css.map */

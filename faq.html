@@ -4,7 +4,7 @@
 <head>
    <meta charset="utf-8">
    <meta http-equiv="x-ua-compatible" content="ie=edge">
-   <title>Addina - Multipurpose eCommerce HTML Template
+   <title>Arch - FAQ
 
    </title>
    <meta name="description" content="">
@@ -52,37 +52,6 @@
    </div>
    <!-- Back to top end -->
 
-   <!-- search area start -->
-   <div class="df-search-area">
-      <div class="container">
-         <div class="row">
-            <div class="col-xl-12">
-               <div class="df-search-form">
-                  <div class="df-search-close text-center mb-20">
-                     <button class="df-search-close-btn df-search-close-btn"></button>
-                  </div>
-                  <form action="#">
-                     <div class="df-search-input mb-10">
-                        <input type="text" placeholder="Search for product...">
-                        <button type="submit"><i class="flaticon-search-1"></i></button>
-                     </div>
-                     <div class="df-search-category">
-                        <span>Search by : </span>
-                        <a href="#">Furniture, </a>
-                        <a href="#">Furniture, </a>
-                        <a href="#">Furniture, </a>
-                        <a href="#">Furniture, </a>
-                        <a href="#">Furniture</a>
-                     </div>
-                  </form>
-               </div>
-            </div>
-         </div>
-      </div>
-   </div>
-   <div class="body-overlay"></div>
-   <!-- search area end -->
-
    <!-- Offcanvas area start -->
    <div class="fix">
       <div class="offcanvas__info">
@@ -91,7 +60,7 @@
                <div class="offcanvas__top mb-40 d-flex justify-content-between align-items-center">
                   <div class="offcanvas__logo">
                      <a href="index.html">
-                        <img src="assets/imgs/logo/logo-white.svg" alt="logo not found">
+                        <img src="assets/imgs/furniture/logo/logowhite.png" alt="logo not found" style="width: 50px; height: 50px;">
                      </a>
                   </div>
                   <div class="offcanvas__close">
@@ -116,8 +85,8 @@
                         </div>
                         <div class="offcanvas__contact-text">
                            <a target="_blank"
-                              href="https://www.google.com/maps/place/Dhaka/@23.7806207,90.3492859,12z/data=!3m1!4b1!4m5!3m4!1s0x3755b8b087026b81:0x8fa563bbdd5904c2!8m2!3d23.8104753!4d90.4119873">12/A,
-                              Mirnada City Tower, NYC</a>
+                              href="https://www.google.com/maps">Bucharest, Sector 3, Postavarul Street 90
+                              </a>
                         </div>
                      </li>
                      <li class="d-flex align-items-center">
@@ -125,7 +94,7 @@
                            <i class="far fa-phone"></i>
                         </div>
                         <div class="offcanvas__contact-text">
-                           <a href="tel:+088889797697">+088889797697</a>
+                           <a href="tel:+088889797697">+04072222222</a>
                         </div>
                      </li>
                      <li class="d-flex align-items-center">
@@ -133,7 +102,7 @@
                            <i class="fal fa-envelope"></i>
                         </div>
                         <div class="offcanvas__contact-text">
-                           <a href="tel:+012-345-6789"><span class="mailto:support@mail.com">support@mail.com</span></a>
+                           <a href="tel:+012-345-6789"><span class="mailto:support@mail.com">support@arch.com</span></a>
                         </div>
                      </li>
                   </ul>
@@ -141,9 +110,7 @@
                <div class="offcanvas__social">
                   <ul>
                      <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                     <li><a href="#"><i class="fab fa-twitter"></i></a></li>
                      <li><a href="#"><i class="fab fa-youtube"></i></a></li>
-                     <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
                   </ul>
                </div>
             </div>
@@ -154,6 +121,142 @@
    <div class="offcanvas__overlay-white"></div>
    <!-- Offcanvas area start -->
 
+   <!-- Add cart modal area start -->
+   <div class="product-modal-sm modal fade" id="producQuickViewModal" tabindex="-1">
+      <div class="modal-dialog modal-dialog-centered">
+         <div class="modal-content">
+            <div class="product-modal">
+               <div class="product-modal-wrapper p-relative">
+                  <button type="button" class="close product-modal-close" data-bs-dismiss="modal" aria-label="Close">
+                     <i class="fal fa-times"></i>
+                  </button>
+                  <div class="modal__inner">
+                     <div class="bd__shop-details-inner">
+                        <div class="row">
+                           <div class="col-xxl-6 col-lg-6">
+                              <div class="product__details-thumb-wrapper d-sm-flex align-items-start">
+                                 <div class="product__details-thumb-tab mr-20">
+                                    <nav>
+                                       <div class="nav nav-tabs flex-nowrap flex-sm-column" id="nav-tab" role="tablist">
+                                          <button class="nav-link active" id="img-1-tab" data-bs-toggle="tab"
+                                             data-bs-target="#img-1" type="button" role="tab" aria-controls="img-1"
+                                             aria-selected="true">
+                                             <img src="assets/imgs/product/details/details-04.png"
+                                                alt="product-sm-thumb">
+                                          </button>
+                                          <button class="nav-link" id="img-2-tab" data-bs-toggle="tab"
+                                             data-bs-target="#img-2" type="button" role="tab" aria-controls="img-3"
+                                             aria-selected="false">
+                                             <img src="assets/imgs/product/details/details-05.png"
+                                                alt="product-sm-thumb">
+                                          </button>
+                                          <button class="nav-link" id="img-3-tab" data-bs-toggle="tab"
+                                             data-bs-target="#img-3" type="button" role="tab" aria-controls="img-3"
+                                             aria-selected="false">
+                                             <img src="assets/imgs/product/details/details-06.png"
+                                                alt="product-sm-thumb">
+                                          </button>
+                                       </div>
+                                    </nav>
+                                 </div>
+                                 <div class="product__details-thumb-tab-content">
+                                    <div class="tab-content" id="productthumbcontent">
+                                       <div class="tab-pane fade show active" id="img-1" role="tabpanel"
+                                          aria-labelledby="img-1-tab">
+                                          <div class="product__details-thumb-big w-img">
+                                             <img src="assets/imgs/product/details/details-04.png" alt="">
+                                          </div>
+                                       </div>
+                                       <div class="tab-pane fade" id="img-2" role="tabpanel"
+                                          aria-labelledby="img-2-tab">
+                                          <div class="product__details-thumb-big w-img">
+                                             <img src="assets/imgs/product/details/details-05.png" alt="">
+                                          </div>
+                                       </div>
+                                       <div class="tab-pane fade" id="img-3" role="tabpanel"
+                                          aria-labelledby="img-3-tab">
+                                          <div class="product__details-thumb-big w-img">
+                                             <img src="assets/imgs/product/details/details-06.png" alt="">
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="col-xxl-6 col-lg-6">
+                              <div class="product__details-content">
+                                 <div class="product__details-top d-flex flex-wrap gap-3 align-items-center mb-15">
+                                    <div class="product__details-tag">
+                                       <a href="#">New Arrival</a>
+                                    </div>
+                                    <div class="product__details-rating">
+                                       <a href="#"><i class="fa-solid fa-star"></i></a>
+                                       <a href="#"><i class="fa-solid fa-star"></i></a>
+                                       <a href="#"><i class="fa-solid fa-star"></i></a>
+                                       <a href="#"><i class="fa-solid fa-star"></i></a>
+                                       <a href="#"><i class="fa-regular fa-star"></i></a>
+                                    </div>
+                                    <div class="product__details-review-count">
+                                       <a href="#">24 Reviews</a>
+                                    </div>
+                                 </div>
+                                 <h3 class="product__details-title">Ergonomic Office Chair - Premium Comfort</h3>
+                                 <div class="product__details-price">
+                                    <span class="old-price">$299.99</span>
+                                    <span class="new-price">$249.99</span>
+                                 </div>
+                                 <p>Experience ultimate comfort with our premium ergonomic office chair. Features adjustable height, lumbar support, breathable mesh back, and 360-degree swivel. Perfect for home office or workplace. Available in multiple colors.</p>
+
+                                 <div class="product__details-action mb-35">
+                                    <div class="product__quantity">
+                                       <div class="product-quantity-wrapper">
+                                          <form action="#">
+                                             <button class="cart-minus"><i class="fa-light fa-minus"></i></button>
+                                             <input class="cart-input" type="text" value="1">
+                                             <button class="cart-plus"><i class="fa-light fa-plus"></i></button>
+                                          </form>
+                                       </div>
+                                    </div>
+                                    <div class="product__add-cart">
+                                       <a href="javascript:void(0)" class="fill-btn cart-btn">
+                                          <span class="fill-btn-inner">
+                                             <span class="fill-btn-normal">Add To Cart<i
+                                                   class="fa-solid fa-basket-shopping"></i></span>
+                                             <span class="fill-btn-hover">Add To Cart<i
+                                                   class="fa-solid fa-basket-shopping"></i></span>
+                                          </span>
+                                       </a>
+                                    </div>
+                                    <div class="product__add-wish">
+                                       <a href="#" class="product__add-wish-btn"><i class="fa-solid fa-heart"></i></a>
+                                    </div>
+                                 </div>
+                                 <div class="product__details-meta">
+                                    <div class="sku">
+                                       <span>SKU:</span>
+                                       <a href="#">CHR-ERG-001</a>
+                                    </div>
+                                    <div class="categories">
+                                       <span>Categories:</span> <a href="#">Office Chairs,</a> <a href="#">Ergonomic,</a> <a
+                                          href="#">Furniture</a>
+                                    </div>
+                                    <div class="tag">
+                                       <span>Tags:</span> <a href="#"> Ergonomic,</a> <a href="#">Adjustable,</a> <a
+                                          href="#">Mesh Back</a>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+   <!-- Add cart modal area end -->
+
    <!-- Header area start -->
    <header>
       <div class="header">
@@ -162,10 +265,10 @@
                <div class="header-to-main d-none d-sm-flex">
                   <div class="link-text">
                      <span><img src="assets/imgs/icons/call.png" alt=""></span>
-                     <a href="tel:+380961381876">+380961381876</a>
+                     <a href="tel:+380961381876">+40722222222</a>
                   </div>
                   <div class="header-top-notice d-none d-lg-block">
-                     <p>TAKE CARE OF YOUR Health <span class="text-white">25% OFF</span> USE CODE “ DOFIX03 ”</p>
+                     <p>Sale on Chairs <span class="text-white">25% OFF</span> USE CODE “ SIT25 ”</p>
                   </div>
                   <div class="tp-header-top-menu d-flex align-items-center justify-content-end">
                      <div class="header-lang-item header-lang">
@@ -227,7 +330,7 @@
                      <div class="header-left">
                         <div class="header-logo">
                            <a href="index.html">
-                              <img src="assets/imgs/furniture/logo/logo.svg" alt="logo not found">
+                              <img src="assets/imgs/furniture/logo/logoblack.png" alt="logo not found" style="width: 50px; height: 50px;">
                            </a>
                         </div>
                         <div class="mean__menu-wrapper furniture__menu d-none d-lg-block">
@@ -236,45 +339,15 @@
                                  <ul>
                                     <li class="has-dropdown">
                                        <a href="index.html">Home</a>
-                                       <ul class="submenu">
-                                          <li><a href="pharmacy.html">Pharmacy Store</a></li>
-                                          <li><a href="index.html">Furniture Store</a></li>
-                                          <li><a href="grocery.html">Grocery Store</a></li>
-                                       </ul>
+
                                     </li>
                                     <li>
                                        <a href="about.html">About</a>
                                     </li>
                                     <li class="has-dropdown">
                                        <a href="product.html">Shop</a>
-                                       <ul class="submenu">
-                                          <li><a href="product.html">Product</a></li>
-                                          <li><a href="product-details.html">Product Details</a></li>
-                                          <li><a href="wishlist.html">Wishlist</a></li>
-                                          <li><a href="cart.html">Cart</a></li>
-                                          <li><a href="checkout.html">Checkout</a></li>
-                                       </ul>
                                     </li>
-                                    <li class="has-dropdown">
-                                       <a href="about.html">Pages</a>
-                                       <ul class="submenu">
-                                          <li><a href="about.html">About Us</a></li>
-                                          <li><a href="store.html">Find a Store</a></li>
-                                          <li><a href="portfolio.html">Portfolio</a></li>
-                                          <li><a href="portfolio-details.html">Portfolio Details</a></li>
-                                          <li><a href="faq.html">Faq</a></li>
-                                          <li><a href="coming-soon.html">Coming Soon</a></li>
-                                          <li><a href="error.html">404</a></li>
-                                       </ul>
-                                    </li>
-                                    <li class="has-dropdown">
-                                       <a href="blog.html">Blog</a>
-                                       <ul class="submenu">
-                                          <li><a href="blog.html">Blog Default</a></li>
-                                          <li><a href="blog-grid.html">Blog Grid</a></li>
-                                          <li><a href="blog-details.html">Blog Details</a></li>
-                                       </ul>
-                                    </li>
+
                                     <li>
                                        <a href="contact.html">Contact</a>
                                     </li>
@@ -348,6 +421,7 @@
       </div>
    </header>
    <!-- Header area end -->
+
 
    <!-- Body main wrapper start -->
    <main>
@@ -520,15 +594,13 @@
                <div class="footer-grid-3">
                   <div class="footer-widget-4">
                      <div class="footer-logo mb-35">
-                        <a href="index.html"><img src="assets/imgs/furniture/logo/logo-light.svg"
+                        <a href="index.html"><img src="assets/imgs/furniture/logo/logowhite.png" style="width: 50px;"
                               alt="image bnot found"></a>
                      </div>
-                     <p>It helps designers plan out where the content will sit, the content to be written and approved.
+                     <p>This is a presentation website for a furniture store.
                      </p>
                      <div class="theme-social">
                         <a class="furniture-bg-hover" href="#"><i class="fa-brands fa-facebook-f"></i></a>
-                        <a class="furniture-bg-hover" href="#"><i class="fa-brands fa-twitter"></i></a>
-                        <a class="furniture-bg-hover" href="#"><i class="fa-brands fa-linkedin-in"></i></a>
                         <a class="furniture-bg-hover" href="#"><i class="fa-brands fa-instagram"></i></a>
                      </div>
                   </div>
@@ -554,8 +626,6 @@
                         <ul>
                            <li><a href="index.html">Home</a></li>
                            <li><a href="about.html">About us </a></li>
-                           <li><a href="about.html">Pages</a></li>
-                           <li><a href="blog.html">Blog</a></li>
                            <li><a href="contact.html">Contact us</a></li>
                         </ul>
                      </div>
@@ -565,15 +635,15 @@
                         <h4>Contact</h4>
                      </div>
                      <div class="footer-info mb-35">
-                        <p class="w-75">4517 Washington Ave. Manchester, Kentucky 39495</p>
+                        <p class="w-75">Bucharest, Sector 3, Romania</p>
                         <div class="footer-info-item d-flex align-items-start pb-15 pt-15">
                            <div class="footer-info-icon mr-20">
                               <span> <i class="fa-solid fa-location-dot furniture-icon"></i></span>
                            </div>
                            <div class="footer-info-text">
                               <a class="furniture-clr-hover" target="_blank"
-                                 href="https://www.google.com/maps/place/Orville+St,+La+Presa,+CA+91977,+USA/@32.7092048,-117.0082772,17z/data=!3m1!4b1!4m5!3m4!1s0x80d9508a9aec8cd1:0x72d1ac1c9527b705!8m2!3d32.7092003!4d-117.0060885">711-2880
-                                 Nulla St.</a>
+                                 href="https://maps.app.goo.gl/P3svuWc7ENL2GRMNA">90 Postavarul Street
+                                </a>
                            </div>
                         </div>
                         <div class="footer-info-item d-flex align-items-start">
@@ -581,7 +651,7 @@
                               <span><i class="fa-solid fa-phone furniture-icon"></i></span>
                            </div>
                            <div class="footer-info-text">
-                              <a class="furniture-clr-hover" href="tel:012-345-6789">+964 742 44 763</a>
+                              <a class="furniture-clr-hover" href="tel:012-345-6789">+40722222222</a>
                               <p>Mon - Sat: 9 AM - 5 PM</p>
                            </div>
                         </div>
@@ -595,15 +665,10 @@
          <div class="footer-copyright-area b-t">
             <div class="footer-copyright-wrapper">
                <div class="footer-copyright-text">
-                  <p class="mb-0">© All Copyright 2024 by <a target="_blank" class="furniture-clr-hover"
-                        href="#">Addina</a></p>
+                  <p class="mb-0">© 2025 Arch</p>
                </div>
                <div class="footer-payment d-flex align-items-center gap-2">
-                  <div class="footer-payment-item mb-0">
-                     <div class="footer-payment-thumb">
-                        <img src="assets/imgs/icons/payoneer.png" alt="">
-                     </div>
-                  </div>
+
                   <div class="footer-payment-item mb-0">
                      <div class="footer-payment-thumb">
                         <img src="assets/imgs/icons/maser.png" alt="">

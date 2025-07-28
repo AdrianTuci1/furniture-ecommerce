@@ -801,6 +801,21 @@
 				clickable: true,
 			},
 			a11y: false,
+			on: {
+				slideChange: function () {
+					// Change background image based on slide index
+					const backgrounds = [
+						"assets/imgs/furniture/banner/living.jpg",
+						"assets/imgs/furniture/banner/bedroom.jpg", 
+						"assets/imgs/furniture/banner/garden.jpg"
+					];
+					const currentIndex = this.realIndex % backgrounds.length;
+					const bannerSection = document.querySelector('.furniture-banner-area');
+					if (bannerSection) {
+						bannerSection.style.backgroundImage = `url(${backgrounds[currentIndex]})`;
+					}
+				}
+			}
 		});
 
 		function animated_swiper(selector, init) {
